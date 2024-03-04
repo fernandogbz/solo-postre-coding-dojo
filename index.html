@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Just Dessert</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="header">
+          <div class="logo">
+            <h1>Just<span>Dessert</span></h1>
+          </div>
+          <div>
+            <button class="button join" id="joinBtn" onclick="removeBtn()">
+              Join
+            </button>
+            <button class="button login">Login</button>
+          </div>
+        </div>
+        <div class="subheader">
+          <div class="search-bar">
+            <input type="text" placeholder="Search" id="searchInput" />
+            <button id="goBtn" onclick="inputAlert()">GO</button>
+          </div>
+          <div class="content-subheader">
+            <div class="dessert-div">
+              <img class="dessert-image" src="./images/cake.png" alt="Cake" />
+              <p>Cake</p>
+            </div>
+            <div class="dessert-div show">
+              <img
+                class="dessert-image"
+                src="./images/cookie.png"
+                alt="Cookies"
+              />
+              <p>Cookies</p>
+            </div>
+            <div class="dessert-div">
+              <img
+                class="dessert-image"
+                src="./images/ice-cream.png"
+                alt="Ice Cream"
+              />
+              <p>Ice Cream</p>
+            </div>
+            <div class="dessert-div">
+              <img class="dessert-image" src="./images/pie.png" alt="Pie" />
+              <p>Pie</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="main-content">
+          <div class="recipe">
+            <h2>Recipe of the Day</h2>
+            <img src="./images/orange-tart.jpg" alt="" />
+          </div>
+          <div class="description-container">
+            <div class="description">
+              <p>Orange Tea Jelly Tart</p>
+              <span
+                >By:
+                <a href="https://github.com/fernandogbz">yuripiano</a></span
+              >
+            </div>
+            <div class="likes">
+              <button class="likeBtn" onclick="like(0)">
+                <img src="images/heart.png" alt="likes" />
+              </button>
+              <span class="likesCount">68</span>
+            </div>
+          </div>
+          <a class="full-recipe" href="https://github.com/fernandogbz"
+            >See the full recipe</a
+          >
+        </div>
+        <div class="subcontent-container">
+          <h3>Recommended for you</h3>
+          <div class="subcontent">
+            <img src="images/macarons.jpg" alt="Macarons" />
+            <div class="description-container">
+              <div class="description">
+                <p>Macarons</p>
+                <span
+                  >By:
+                  <a href="https://github.com/fernandogbz">EmilieW</a></span
+                >
+              </div>
+              <div class="likes-subcontent">
+                <button class="likeBtn" onclick="like(1)">
+                  <img src="images/heart.png" alt="likes" />
+                </button>
+                <span class="likesCount">212</span>
+              </div>
+            </div>
+          </div>
+          <div class="subcontent">
+            <img src="images/creme-brulee.jpg" alt="Crème Brûlée" />
+            <div class="description-container">
+              <div class="description">
+                <p>Crème Brûlée</p>
+                <span
+                  >By:
+                  <a href="https://github.com/fernandogbz">MarisaG</a></span
+                >
+              </div>
+              <div class="likes-subcontent">
+                <button class="likeBtn" onclick="like(2)">
+                  <img src="images/heart.png" alt="likes" />
+                </button>
+                <span class="likesCount">32</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
