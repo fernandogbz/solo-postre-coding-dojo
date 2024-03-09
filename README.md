@@ -1,1 +1,1 @@
-# solo-postre-examen-solo-postre-coding-dojo
+# solo-postre-coding-dojo
